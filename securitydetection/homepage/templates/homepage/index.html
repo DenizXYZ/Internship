@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Homepage</title>
+       
+    </head>
+    <body>
+        <style>
+            .Webapp{
+                height: 995px;
+                width: 1519px;
+                border: 3px solid black;
+                vertical-align: middle
+            }
+
+            .databutton{
+                position: relative;
+                height:100px;
+                width:200px;
+                font-size: 35px;
+                top:345px;
+                left: 455px;
+            }
+            .text{
+                position: relative;
+                top: 465px;
+                text-align: center;
+            }
+
+            #regular_search {
+                height: 30px;
+                width: 500px;
+                border: 1px;
+                border-radius: 10px;
+                border-color:black;
+                border-style:solid;
+                position: absolute;
+                top: 150px; left: 500px;
+            }
+            #regular_search, ::placeholder{
+                font-size: 25px;
+                color: black;
+            }
+            #a{
+                background-color: lightgrey;
+                border: 3px solid black;
+            }
+            
+        </style>
+
+
+        <div class="Webapp">
+            <form action="https://google.com/search">
+                <input type="text" name="q" placeholder="   Search google" id="regular_search">
+            </form>
+            <form action="https://stackoverflow.com/search">
+                <input type="text" name="q" placeholder="   Search Stack overflow" id="regular_search" style="top:300px">
+            </form>
+            <h1 style="top:415px"class='text'>Do you need the </h1>
+            <h1 class="text">or the</h1>
+            <h1 class="text" style="top:540px">or do you want to</h1>
+
+            <form action ="googledata">
+                <button type="submit"  href="googledata" class="databutton" id="GoogledataBtn" style="top: 325px;">Google data</button>
+            </form>
+
+            <form action="comparedata">
+                <button type="submit" href="comparedata" class="databutton" id="ComparedataBtn" style="top:475px; font-size: 20px; left:650px">Compare google and Microsoft data</button>
+            </form>
+
+            <form action="microsoftdata">
+                <button type="submit" href="microsoftdata" class="databutton" id="MicrosoftdataBtn" style="top: 120px; left:855px">Microsoft data</button>
+            </form>
+        </div>
+    </body>
+</html>
